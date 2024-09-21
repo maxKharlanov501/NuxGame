@@ -6,10 +6,22 @@
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">My profile</RouterLink>
     <ProfileComponent class="ms-auto" />
+    <Button @click="handleLogout" class="text-sm">Logout</Button>
   </div>
 </template>
 
 <script setup lang="ts">
+import { useUsersStore } from '@/store/user/users.store';
 import ProfileComponent from './ProfileComponent.vue';
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
+
+const router = useRouter()
+const $users = useUsersStore()
+const { logout } = $users
+
+const handleLogout = () => {
+  logout()
+  router.push('/login')
+}
+
 </script>

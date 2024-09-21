@@ -19,6 +19,10 @@ export const useUsersStore = defineStore('users', () => {
       console.error('Error: ', error)
     }
   }
+  const logout = () => {
+    user.value = null
+    Cookies.remove('user')
+  }
 
   const login = async (form: IForm) => {
     try {
@@ -51,5 +55,5 @@ export const useUsersStore = defineStore('users', () => {
     user.value = getUserProfile()
   }
 
-  return { user, users, findUsers, login, getProfile }
+  return { user, users, findUsers, login, getProfile, logout }
 })

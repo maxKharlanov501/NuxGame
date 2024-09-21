@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { type PropType, defineProps, defineEmits } from 'vue';
+import { type PropType, defineEmits } from 'vue';
 
 const props = defineProps({
   type: {

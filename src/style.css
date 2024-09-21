@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-submit {
+  background-color: #519945;
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  width: 100%;
+  font-size: 17px;
+  color: white;
+  border-radius: .375rem;
+  transition: .250ms ease-in-out;
+}
+
+.btn-submit.is-loading, .btn-submit[disabled]{
+  pointer-events: none;
+  background-color: #3F7A33;
+}
+
+.btn-submit:hover{
+  background-color: #3F7A33;
+}
+
+input, select {
+  border-radius: .375rem;
+  padding: .625rem;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+input:focus-visible, select:focus-visible{
+  outline: none;
+}

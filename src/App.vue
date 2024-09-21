@@ -1,4 +1,8 @@
 <template>
-  <div class="font-bold">hello world</div>
+  <div class="flex flex-col min-h-screen bg-gray-500">
+    <RouterView />
+  </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+</script>

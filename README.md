@@ -23,7 +23,7 @@ Make sure you have the following installed:
   npm install
   npm run dev
 
-3. Deployment
+3. Deployment:
 
   ```bash
   npm run build

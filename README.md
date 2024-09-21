@@ -17,11 +17,13 @@ Make sure you have the following installed:
    git clone https://github.com/maxKharlanov501/NuxGame
    cd NuxGame
   
+  
 2. Install dependencies:
 
   ```bash
   npm install
   npm run dev
+
 
 3. Deployment:
 

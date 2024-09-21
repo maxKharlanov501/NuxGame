@@ -13,10 +13,10 @@ Make sure you have the following installed:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/maxKharlanov501/NuxGame
-   cd NuxGame
-   ```
+  ```bash
+  git clone https://github.com/maxKharlanov501/NuxGame
+  cd NuxGame
+  ```
   
 
 2. Install dependencies:

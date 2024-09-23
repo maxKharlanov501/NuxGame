@@ -6,7 +6,7 @@
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">My profile</RouterLink>
     <ProfileComponent class="ms-auto" />
-    <Button @click="handleLogout" class="text-sm">Logout</Button>
+    <button @click="handleLogout" class="text-sm">Logout</button>
   </div>
 </template>
 
